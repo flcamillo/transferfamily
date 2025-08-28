@@ -49,21 +49,20 @@ func handleRequest(ctx context.Context, event *AwsTransferAutenticationRequest) 
 	virtualDirectoryDetails := []*AwsHomeDirectoryDetails{
 		{
 			Entry:  "/upload",
-			Target: "/900155862302-sftp-upload/${transfer:UserName}",
+			Target: "/awsaccount-sftp-upload/${transfer:UserName}",
 		},
 		{
 			Entry:  "/download",
-			Target: "/900155862302-sftp-download/${transfer:UserName}",
+			Target: "/awsaccount-sftp-download/${transfer:UserName}",
 		},
 	}
 	virtualDirectoryData, _ := json.Marshal(virtualDirectoryDetails)
 	// define a resposta da autenticação básica
 	// esta resposta deve ser adaptada conforme o tipo de autenticação
 	response := &AwsTransferAutenticationResponse{
-		Role:                 "arn:aws:iam::900155862302:role/transfer-sftp-server-1-user-role",
+		Role:                 "arn:aws:iam::awsaccount:role/transfer-sftp-server-1-user-role",
 		HomeDirectoryType:    "LOGICAL",
 		HomeDirectoryDetails: string(virtualDirectoryData),
-		//HomeDirectory:        fmt.Sprintf("/900155862302-sftp-upload/%s", event.UserName),
 	}
 	// deve sempre retornar a chave pública do usuário quando
 	// não é fornecida a senha do usuário
