@@ -1,0 +1,8 @@
+.terraform
+*.log
+*.exe
+*.tfstate
+*.hcl
+*.backup
+*.zip
+bootstrap
