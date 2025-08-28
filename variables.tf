@@ -31,15 +31,15 @@ variable "sftp_key" {
 variable "sftp_user" {
   description = "Nome do usuário SFTP"
   type        = string
-  default     = "flc"
+  default     = ""
 }
 
 variable "sftp_user_secret" {
   description = "Credenciais do usuário SFTP"
   type        = map(string)
   default = {
-    Username  = "ITAUFA"
-    Password  = "$@Sdf1357-ab"
+    Username  = ""
+    Password  = ""
     PublicKey = "-----BEGIN RSA PRIVATE KEY-----\nMIIEowIBAAKCAQEAvIQSs2bGtzR8RB4QAXa75PIhR/yPR4SHAreQeshxCIIZLKnL\n6a2iyg5eISHEIYVhxclt8GohJ+vTe9jdrh43EJyce1roBo0KktdvVVUJcrEurq9E\nw8K96YOj06RC44IxiXHGB6o6FNMolfMjucs27lVul+TDDWIo8vyaXabPnY7zBOx9\nua3wMumSnS3Zrt1w91JW6p1UgI3jkSeDRlmfZDGiNGMvAX9VPDPHnPA8VdRSKZRa\nqw4uyQ3WPbc8Y1022epnHpi07c+MTrW1Kw6B3wsij2mJy4c9Zeteuxv9MRcaGxvH\nTGjLPvnLprruR4FggblM2GPF+4tLF2PnC0id8wIDAQABAoIBAEa+gY4VmakS5zdg\n2LzT4/ss6lRrcRFzqH7aiDurkM+SkwPxzHYrFRYigiyI0WOK/IAO8VTxXvPuSfUG\nE1rON/fh7c9U9BHRSBCHDF7HhL4nw88GMxYLtN0263n3AKsEJrbfnWMu/JDoFSkA\nj32fx0N1iAU0cgZJufhF12Ahw3Pqll2dcezMPS3etRC5wpz/0ejEI7akQKCkm81D\nibuH6elwo2IjueO414G+OoWQ1ZzsL7zC8Aedni1kOmoj2fv2XszXEy8bS1UtNsrU\nlAVphWzYybbz7bihygzQz818zG2hBfKN7suJ0FqOQEaqtfYeZwIsu6atsNZK/p6+\ntbHK2lECgYEA2FiFF/gFP6VIaxRO2qNTe464pUYd+Od4bMz9JA3Hs/Fbw/Eni198\nODahoqhF4UbI6rub8wvvUwncL82pt/lS5eYQRUhaxJSo1LiUX3lm7X35L8xOCDYp\nG3mVUDTuNjEbZApOS7syljzOMMBTRr4CS3vbhbkebDHUZcEhAbeAtw0CgYEA3xG0\n6HMsTUVJsBtxUApTsn5AK9DXImwVRZ24rIyNyGB32Fzuh1jJjzPvfWn2FGJG/9Qz\nb8bIXIRbmcFy4RPUM7tvtboHSWyG9Z+2jMdaEK4dmb8n3Xf6SCjjEm9Qdg4FNWoN\nEWEy6z8D6spPn7Nrlaw0nKN4/BCqCqVLMplJaP8CgYEAk+PvF3N0Iw3Zc1lujgcY\nCl6F2nUUCBIzQCzg3sSMv3U+RbOUVLHxOHwgAhEFs/mvXsbg1ERUVW9oFUWBv0Gw\naXfbp4DOi5MT1lZXFuzmb3Kt5P7EWNitQRrb9vg33tOy5bAl1Z8h9ZGbYbgXNUSu\nTOteJQtmwI9Poj9jUMkgNAECgYB+R/rfQRxKXjg6Dz8VrdL2EEzpwR+ZaBCeyYwb\nerJlRl9ySCHs01G/1Qn2OL9LiNtixtGbrLAO2As3PvF3BA+0fZ7fBQJNCbhZYuIo\nTk7pdHhjanj6AorYwPTTodquCn/eXjwpo5n83T6tc3yiDyOPpt5d8plyMUjiH/Mz\nIN4TJwKBgDN6jVMMGOVF/GQttaWONTfaahBRXVwLPA/X66eGx7jcokkkqmdt+RQ7\nVLLWUMsbc9DECq738GSnsYwzrs1mS0UqcEDjwIrKoa0WQKMrS7moTfChyMeVuOZe\nVWeoYfF5w2S885uV8+l/f3qk1x4iqdIV03L21TdrACid8Q0bsUwc\n-----END RSA PRIVATE KEY-----"
   }
 }
